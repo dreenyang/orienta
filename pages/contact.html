@@ -149,10 +149,15 @@
         }
         
         .cta-button:disabled {
-            background: #cbd5e1;
+            background: #6b7280;
             cursor: not-allowed;
             transform: none;
             box-shadow: none;
+            opacity: 0.8;
+        }
+        
+        .cta-button:disabled .fa-spinner {
+            margin-right: 8px;
         }
         
         .form-message {
@@ -528,7 +533,7 @@
                     // Show loading state
                     const submitButton = contactForm.querySelector('button[type="submit"]');
                     const originalText = submitButton.textContent;
-                    submitButton.textContent = 'Sending...';
+                    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing... please wait';
                     submitButton.disabled = true;
                     
                     try {
@@ -560,7 +565,7 @@
                         showMessage('Unable to send message. Please check your connection and try again.', 'error');
                     } finally {
                         // Reset button
-                        submitButton.textContent = originalText;
+                        submitButton.innerHTML = originalText;
                         submitButton.disabled = false;
                     }
                 });
