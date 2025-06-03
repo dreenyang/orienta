@@ -139,6 +139,11 @@
                             </div>
                         </div>
                         
+                        <div class="form-group" id="wechat-id-group" style="display: none;">
+                            <label for="wechat">WeChat ID</label>
+                            <input type="text" id="wechat" name="wechat" placeholder="Your WeChat ID">
+                        </div>
+                        
                         <div class="form-group">
                             <label>
                                 <input type="checkbox" name="newsletter" value="yes">
@@ -247,6 +252,20 @@
                 });
             }
             
+            // Show/hide WeChat ID field based on preferred contact method
+            const preferredContactRadios = document.querySelectorAll('input[name="preferred-contact"]');
+            const wechatIdGroup = document.getElementById('wechat-id-group');
+            
+            preferredContactRadios.forEach(radio => {
+                radio.addEventListener('change', function() {
+                    if (this.value === 'wechat') {
+                        wechatIdGroup.style.display = 'block';
+                    } else {
+                        wechatIdGroup.style.display = 'none';
+                    }
+                });
+            });
+            
             // Form validation and submission handling
             const contactForm = document.getElementById('contactForm');
             
@@ -262,7 +281,8 @@
                         subject: document.getElementById('subject').value,
                         message: document.getElementById('message').value.trim(),
                         preferredContact: document.querySelector('input[name="preferred-contact"]:checked').value,
-                        newsletter: document.querySelector('input[name="newsletter"]').checked
+                        newsletter: document.querySelector('input[name="newsletter"]').checked,
+                        wechat: document.getElementById('wechat').value.trim()
                     };
                     
                     // Basic validation
