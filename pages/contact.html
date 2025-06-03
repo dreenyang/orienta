@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Orienta</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Noto+Sans+SC:wght@400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="../assets/images/orienta_logo.png" alt="Orienta Logo">
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We're here to answer your questions and help you begin your journey</p>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <div class="two-column">
+            <div>
+                <h2>Get in Touch</h2>
+                <p>Have questions about our services or ready to start your career journey? Reach out to us using the form below or through our other contact channels.</p>
+                
+                <div class="contact-info mt-4">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <p><a href="mailto:info@orienta.coach">info@orienta.coach</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-weixin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>WeChat</h3>
+                            <p>ID: OrientaCoach</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>(123) 456-7890</p>
+                            <p class="text-sm">Available Monday-Friday, 9am-6pm EST</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-media mt-4">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name*</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject*</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Please select a subject</option>
+                                <option value="student-services">Student Services</option>
+                                <option value="parent-services">Parent Services</option>
+                                <option value="consultation">Free Consultation</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message*</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferred-contact">Preferred Contact Method</label>
+                            <div class="radio-group">
+                                <label>
+                                    <input type="radio" name="preferred-contact" value="email" checked>
+                                    Email
+                                </label>
+                                <label>
+                                    <input type="radio" name="preferred-contact" value="phone">
+                                    Phone
+                                </label>
+                                <label>
+                                    <input type="radio" name="preferred-contact" value="wechat">
+                                    WeChat
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="newsletter" value="yes">
+                                Subscribe to our newsletter for career tips and updates
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="wechat-info" class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Connect on WeChat</h2>
+            <p>Scan the QR code below to connect with us on WeChat for quick responses and updates.</p>
+            <div class="qr-code-container">
+                <div class="qr-code">
+                    <!-- This would be replaced with an actual QR code image -->
+                    <div class="placeholder-qr">
+                        <i class="fab fa-weixin" style="font-size: 4rem; color: var(--primary);"></i>
+                        <p>QR Code</p>
+                    </div>
+                </div>
+                <p class="mt-3">WeChat ID: OrientaCoach</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>How do I schedule a free consultation?</h3>
+                <p>You can schedule a free consultation by filling out the contact form on this page, sending us an email, or reaching out via WeChat. We'll respond within 24 hours to arrange a time that works for you.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Can parents join the consultation sessions?</h3>
+                <p>Absolutely! We encourage parents to participate in the initial consultation if desired. We can conduct these sessions in English or Chinese based on your preference.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Where are your coaching sessions conducted?</h3>
+                <p>Our coaching sessions are primarily conducted online via video conferencing, making our services accessible regardless of your location. For clients in certain areas, we may also offer in-person sessions by arrangement.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>How quickly can I expect a response?</h3>
+                <p>We typically respond to all inquiries within 24 business hours. For urgent matters, please indicate this in your message subject line.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Begin Your Journey?</h2>
+            <p>Take the first step toward career clarity and success with Orienta.</p>
+            <div class="cta-buttons">
+                <a href="services.html" class="cta-button" style="background-color: white; color: var(--primary);">Explore Our Services</a>
+                <a href="how-it-works.html" class="cta-button" style="background-color: transparent; color: white; border-color: white;">Learn How It Works</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../assets/images/orienta_logo_small.png" alt="Orienta Logo" style="max-width: 150px;">
+                    <p class="tagline">Find Direction. Lead Your Way.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: <a href="mailto:info@orienta.coach">info@orienta.coach</a></p>
+                    <p>WeChat: OrientaCoach</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Orienta. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            const navMenu = document.getElementById('navMenu');
+            
+            if (mobileMenuToggle && navMenu) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('show');
+                });
+            }
+            
+            // Form validation and submission handling
+            const contactForm = document.getElementById('contactForm');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = {
+                        name: document.getElementById('name').value.trim(),
+                        email: document.getElementById('email').value.trim(),
+                        phone: document.getElementById('phone').value.trim(),
+                        subject: document.getElementById('subject').value,
+                        message: document.getElementById('message').value.trim(),
+                        preferredContact: document.querySelector('input[name="preferred-contact"]:checked').value,
+                        newsletter: document.querySelector('input[name="newsletter"]').checked
+                    };
+                    
+                    // Basic validation
+                    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+                        showMessage('Please fill in all required fields.', 'error');
+                        return;
+                    }
+                    
+                    // Show loading state
+                    const submitButton = contactForm.querySelector('button[type="submit"]');
+                    const originalText = submitButton.textContent;
+                    submitButton.textContent = 'Sending...';
+                    submitButton.disabled = true;
+                    
+                    try {
+                        // Send to webhook
+                        const response = await fetch('https://dreenyang.app.n8n.cloud/webhook/orienta-contact-form', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'X-API-Key': 'orienta-2024-secure-key-xyz789'
+                            },
+                            body: JSON.stringify(formData)
+                        });
+                        
+                        if (response.ok) {
+                            const result = await response.json();
+                            // Show success message
+                            showMessage(result.message || 'Thank you for your message! We will get back to you soon.', 'success');
+                            contactForm.reset();
+                        } else {
+                            const error = await response.json().catch(() => ({}));
+                            showMessage(error.message || 'Something went wrong. Please try again or contact us directly.', 'error');
+                        }
+                    } catch (error) {
+                        console.error('Error submitting form:', error);
+                        showMessage('Unable to send message. Please check your connection and try again.', 'error');
+                    } finally {
+                        // Reset button
+                        submitButton.textContent = originalText;
+                        submitButton.disabled = false;
+                    }
+                });
+            }
+            
+            // Helper function to show messages
+            function showMessage(message, type = 'info') {
+                // Remove any existing message
+                const existingMessage = document.querySelector('.form-message');
+                if (existingMessage) {
+                    existingMessage.remove();
+                }
+                
+                // Create message element
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `form-message ${type}`;
+                messageDiv.style.cssText = `
+                    padding: 15px;
+                    margin: 20px 0;
+                    border-radius: 5px;
+                    text-align: center;
+                    ${type === 'success' ? 'background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb;' : ''}
+                    ${type === 'error' ? 'background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb;' : ''}
+                `;
+                messageDiv.textContent = message;
+                
+                // Insert message after form
+                contactForm.parentNode.insertBefore(messageDiv, contactForm.nextSibling);
+                
+                // Auto-remove success messages after 5 seconds
+                if (type === 'success') {
+                    setTimeout(() => {
+                        messageDiv.remove();
+                    }, 5000);
+                }
+            }
+            
+            // FAQ toggle functionality
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('h3');
+                const answer = item.querySelector('p');
+                
+                question.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                    
+                    // Toggle other items closed
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

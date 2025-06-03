@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Test files
+test-*.html
+test-*.json
+test-*.sh
+email-templates/
+*.test.js
+
+# Development files
+improvement_plan.md
+project_summary.md
+visual_design_guide.md
+setup-instructions.md
+improved/
+webhook-*.md
+webhook-*.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
