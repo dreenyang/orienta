@@ -5,8 +5,28 @@
       "destination": "/pages/index.html"
     },
     {
-      "source": "/(.*)",
-      "destination": "/pages/$1.html"
+      "source": "/index",
+      "destination": "/pages/index.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/pages/about.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/pages/contact.html"
+    },
+    {
+      "source": "/services",
+      "destination": "/pages/services.html"
+    },
+    {
+      "source": "/resources",
+      "destination": "/pages/resources.html"
+    },
+    {
+      "source": "/how-it-works",
+      "destination": "/pages/how-it-works.html"
     }
   ],
   "headers": [
